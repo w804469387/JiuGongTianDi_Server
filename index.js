@@ -14,6 +14,9 @@ app.use(logger);
 
 // 首页
 app.get("/", async (req, res) => {
+  console.log(req)
+  console.log(req.headers)
+
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
