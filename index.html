@@ -104,10 +104,11 @@
       $.ajax("https://api.weixin.qq.com/wxa/openapi", {
         method: "GET",
       }).done(function (res) {
-        console.log('openapi::::', res)
+        alert('openapi::::', res)
       });
     } catch (e) {
-      console.log("openapiError::::", e)
+      alert("openapiError::::", e)
+      // console.log("openapiError::::", e)
     }
     // $.ajax("/api/count", {
     //   method: "POST",
